@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+
+.grid-lay {
+    width: 80%;
+    display: grid;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin: auto;
+
+    grid-template-areas:
+        'encabezado'
+        'targets'
+        'formulario1'
+        'footer1';
+
+}
+
+nav {
+    background: gray;
+    height: 70px;
+    width: 100%;
+    grid-area: encabezado;
+}
+label.logo {
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 10px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.comprar {
+    color: green;
+   
+}
+
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#quiero:hover {
+    background-color: #1b9bff;
+    transition: 1s;
+    
+}
+
+#comprar:hover {
+    background-color: #1b9bff;
+    transition: 1s;
+}
+
+#quiero {
+    width: 30%;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+#comprar {
+    width: 30%;
+    height: initial;
+    background-color: green;
+    border: solid white 1px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.conte_targets{
+    width: 50%;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    grid-area: targets;
+}
+
+.target {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: solid 1px blue;
+}
+
+.target:hover {
+    border: solid 2px orange;
+}
+
+.cont-form {
+    grid-area: formulario1;
+    width: 50%;
+    margin: auto;
+}
+
+.cont-form h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.cont-form h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+.cont-form p {text-align: center;}
+.total {width: 100%;
+    height: 50px;
+    border: solid 1px black;
+    background-color: #6bbaf7;
+    border-radius: 5px;
+}
+
+.total h3 {
+    margin: 12px;
+    color: blue;
+    text-align: left;
+}
+.cont-form button {
+    width: 100%;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.formu input { 
+    width: 49.5%;
+    margin-left: 0;
+}
+
+
+ .formu select {
+    width: 50%;
+
+ }
+
+.formu #correo {
+    width: 100%;
+}
+
+.footer1 {
+    width: 100%;
+    background-color: steelblue;
+    grid-area: footer1;
+}
+
+.footer1 ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+@media screen and (max-width:800px) {
+
+    .grid-lay {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav {
+        display: flex;
+        height: 150px;
+    width: 100%;}
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+  
+    .conte_targets {
+        width: 100%;
+    }
+    .footer1 ul {
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        align-items: baseline;
+        margin-left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+    .grid-lay {
+        width: 100%;
+    }
+
+    
+    nav {
+       display: flex;
+       justify-content: space-between;
+    }
+    .logo img {
+        /* display: none; */
+       float: left;
+       scale: 70%;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        margin-right: 10px;
+        float: right;
+    }
+    
+    
+}
