@@ -32,31 +32,35 @@
             <h1>VALOR DEL TICKET $200</h1>
             <br>
             <div class="formu">
-            <form action="Index.php" method="post">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
+            <form id="formulario" action="Index.php" method="post">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
                 <br><br>
-                <input type="mail" id="correo" placeholder="Correo">
+                <input type="email" id="correo" placeholder="Correo" required>
                 <br> <br>
 
                 <label for="cant">Cantidad</label>
-                <input type="text" id="cant" placeholder="Cantidad">
+                <input type="text" id="cant" placeholder="Cantidad" required>
                 <br> <br>
 
                 <label for="cat">Categoría</label>
-                <select name="cat" id="cat">
-                    <option value="Estudiante">Estudiante</option>
-                    <option value="Trainee">Trainee</option>
-                    <option value="Junior">Junior</option>
+                <select name id="cat">
+                    <option value="0">Sin categoría</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
                 </select>
                 <br> <br>
-                <div class="total">
+               <button class="total" id="total">
+                    
                    <h3>Total a Pagar: $</h3>
-                </div>
+                   <h2 id="valor"></h2>
+                   
+                </button>
                 
                 <br> <br>
 
-                <button>Borrar</button>
+                <button id="reset" >Borrar</button>
                 <button>Resumen</button>
 
             </form>
@@ -80,5 +84,8 @@
 
         
     </div>
+
+    <script src="Script.js"></script>
+
 </body>
 </html>

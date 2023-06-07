@@ -52,6 +52,10 @@ a:hover {
     transition: .5s;
 }
 
+.compra {
+    color: green;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -103,24 +107,28 @@ height: 100%;
 #comprar:hover {
     background-color: #1b9bff;
     transition: 1s;
+    
 }
 
 #quiero {
-    width: 30%;
+    width: 200px;
+    height: 30px;
     background-color: transparent;
     border: solid white 1px;
     border-radius: 5px;
     color: white;
+    /* margin: 10px; */
 
 }
 
 #comprar {
-    width: 30%;
-    height: initial;
+    width: 200px;
+    height: 30px;
     background-color: green;
     border: solid white 1px;
     border-radius: 5px;
     color: white;
+    margin-top: 10px;
 
 }
 
