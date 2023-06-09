@@ -148,14 +148,16 @@ a:hover {
 }
 
 .total h3 {
-    margin: 5px;
+    margin: auto 10px;
     color: blue;
     text-align: left;
 }
 
 .total h2 {
     margin: auto;
+    margin-left: 15px;
     color: blue;
+    font-style: initial;
 }
 
 .cont-form button {

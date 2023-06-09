@@ -34,18 +34,22 @@ else {
 
 calcular.addEventListener ('click',pago_total);
 
-reset.addEventListener ('click', () => valor.innerHTML = (''));
+reset.addEventListener ('click', () => {
+  valor.innerHTML = ('');
+  cantidad.value = ('');
+
+});
 
 
  form.addEventListener ("submit",(event) =>
   event.preventDefault());
 
  
-//    if (categoria.value = '1') {desc = 0.2}
+//    if (categoria.value == '1') {desc = 0.2}
     
-//    else if (categoria.value = '2') {desc = 0.5}
+//    else if (categoria.value == '2') {desc = 0.5}
     
-//    else if (categoria.value = '3') {desc = 0.85}
+//    else if (categoria.value == '3') {desc = 0.85}
 
 //   else {desc = 1};
 
